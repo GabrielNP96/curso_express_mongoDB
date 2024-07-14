@@ -44,4 +44,10 @@ app.post("/livros", (req, res) => {
     res.status(201).send('Livros cadastrado com sucesso!')
 });
 
+app.delete("/livros/:id", (req, res) => {
+    const index = buscaLivro(req.params.id);
+    livros.splice(index, 1);
+    res.status(200).send("livro removido com sucesso.")
+});
+
 export default app;
