@@ -51,3 +51,5 @@ app.delete("/livros/:id", (req, res) => {
 });
 
 export default app;
+
+//mongodb+srv://admin:admin123@cluster0.s33b6ws.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
